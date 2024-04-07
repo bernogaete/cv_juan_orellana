@@ -17,10 +17,16 @@ h1, h2 {
 }
 
 .header-section {
+  background-image: url('../img/bg.jpg'); /* Asegúrate de reemplazar esto con la ruta real de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Ajusta esto según necesites */
+  color: white;
+  position: relative;
   display: flex;
-  align-items: center; /* Centra los elementos verticalmente */
-  justify-content: space-between; /* Espacio entre la caja de texto y la imagen */
-  padding: 20px; /* Espaciado interior para darle un poco de margen a los elementos */
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px; /* Ajusta el padding para posicionar el texto */
 }
 
 .header-section .text-box {
