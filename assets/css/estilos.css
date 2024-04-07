@@ -17,6 +17,8 @@ h1, h2 {
 }
 
 .header-section {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 400px; /* Ajusta esto según necesites */
@@ -24,8 +26,31 @@ h1, h2 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  padding: 20px;
   padding-left: 50px; /* Ajusta el padding para posicionar el texto */
+}
+
+.text-box {
+  flex: 1; /* Permite que la caja de texto ocupe todo el espacio disponible excepto el de la imagen */
+  padding-right: 20px; /* Espaciado a la derecha para no tocar la imagen */
+}
+
+.image-box {
+  flex: 0 1 500px; /* La imagen no crecerá más allá de 300px y no se encogerá por debajo de este tamaño */
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  margin-left: 300px;
+  border-radius: 10px; /* Aplica bordes redondeados */
+}
+
+@media (max-width: 768px) {
+  .image-box {
+      display: none; /* Oculta la caja de la imagen en pantallas pequeñas */
+  }
 }
 
 .header-section .text-box {
@@ -56,15 +81,4 @@ h1, h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-}
-
-.image-box {
-  flex: 0 1 50px; /* La imagen no crecerá más allá de 300px y no se encogerá por debajo de este tamaño */
-  width:10%;
-  height:auto;
-}
-
-.text-box {
-  flex: 1; /* Permite que la caja de texto ocupe todo el espacio disponible excepto el de la imagen */
-  padding-right: 20px; /* Espaciado a la derecha para no tocar la imagen */
 }
