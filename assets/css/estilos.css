@@ -60,7 +60,7 @@ h1, h2 {
 }
 
 .image-box {
-  flex: 0 1 300px; /* La imagen no crecerá más allá de 300px y no se encogerá por debajo de este tamaño */
+  flex: 0 1 200px; /* La imagen no crecerá más allá de 300px y no se encogerá por debajo de este tamaño */
   width:100%;
   height:auto;
 }
