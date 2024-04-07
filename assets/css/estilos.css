@@ -49,6 +49,10 @@ h1, h2 {
   object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
 }
 
+.card-body{
+  background: #000;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
