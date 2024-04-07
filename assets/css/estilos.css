@@ -58,3 +58,14 @@ h1, h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
+
+.image-box {
+  flex: 0 1 300px; /* La imagen no crecerá más allá de 300px y no se encogerá por debajo de este tamaño */
+  width:100%;
+  height:auto;
+}
+
+.text-box {
+  flex: 1; /* Permite que la caja de texto ocupe todo el espacio disponible excepto el de la imagen */
+  padding-right: 20px; /* Espaciado a la derecha para no tocar la imagen */
+}
